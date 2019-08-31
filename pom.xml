@@ -8,5 +8,36 @@
     <artifactId>restful-java-service</artifactId>
     <version>1.0</version>
 
+    <properties>
+        <java.version>1.8</java.version>
+        <spring-framework.version>4.3.18.RELEASE</spring-framework.version>
+        <cxf-rt-frontend-jaxrs.version>3.3.0</cxf-rt-frontend-jaxrs.version>
+    </properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-framework-bom</artifactId>
+                <version>${spring-framework.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <!-- Apache CXF -->
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+            <version>${cxf-rt-frontend-jaxrs.version}</version>
+        </dependency>
+        <!-- Apache HTTP client -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.6</version>
+        </dependency>
+    </dependencies>
 </project>
