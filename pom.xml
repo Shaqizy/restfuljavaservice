@@ -10,7 +10,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <spring-framework.version>4.3.18.RELEASE</spring-framework.version>
+        <spring-framework.version>4.3.29.RELEASE</spring-framework.version>
         <cxf-rt-frontend-jaxrs.version>3.3.0</cxf-rt-frontend-jaxrs.version>
     </properties>
 
